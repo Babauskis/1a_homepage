@@ -1,0 +1,136 @@
+[
+  {
+    "uri": "features/demo.feature",
+    "id": "demo-feature",
+    "keyword": "Feature",
+    "name": "Demo Feature",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "demo-feature;i-can-search-for-an-item",
+        "keyword": "Scenario",
+        "name": "I can search for an item",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.12.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.12.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.22/lib/capybara-screenshot/cucumber.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6253692000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on 1a.lv homepage",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/signup_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3977701000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:47"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 37000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "name": "I search for an item",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/signup_steps.rb:5"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `isVisible' for nil:NilClass (NoMethodError)\n./features/tests/search_tests.rb:13:in `enter_search_for_items'\n./features/step_definitions/signup_steps.rb:6:in `/^I search for an item/'\nfeatures/demo.feature:5:in `And I search for an item'",
+              "duration": 420000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:47"
+                },
+                "result": {
+                  "status": "skipped"
+                }
+              }
+            ]
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:37"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "No such file or directory @ rb_sysopen - report/{file_name} (Errno::ENOENT)\n./features/support/env.rb:54:in `add_screenshot'\n./features/support/env.rb:38:in `After'",
+              "duration": 893293000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.22/lib/capybara-screenshot/cucumber.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.12.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90769000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
