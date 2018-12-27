@@ -21,7 +21,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 35000
+              "duration": 39000
             }
           },
           {
@@ -30,7 +30,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13000
+              "duration": 19000
             }
           },
           {
@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7000
+              "duration": 13000
             }
           },
           {
@@ -48,7 +48,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3597067000
+              "duration": 4505033000
             }
           }
         ],
@@ -62,7 +62,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5326492000
+              "duration": 14946554000
             },
             "after": [
               {
@@ -71,7 +71,7 @@
                 },
                 "result": {
                   "status": "passed",
-                  "duration": 33000
+                  "duration": 85000
                 }
               }
             ]
@@ -85,7 +85,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8074795000
+              "duration": 7927155000
             },
             "after": [
               {
@@ -94,7 +94,7 @@
                 },
                 "result": {
                   "status": "passed",
-                  "duration": 23000
+                  "duration": 36000
                 }
               }
             ]
@@ -104,14 +104,40 @@
             "name": "I verify if first item is visible",
             "line": 6,
             "output": [
-              "Test passed"
+              "First item price is valid"
             ],
             "match": {
               "location": "features/step_definitions/signup_steps.rb:10"
             },
             "result": {
               "status": "passed",
-              "duration": 202921000
+              "duration": 168803000
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:47"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 24000
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "name": "I verify if second item is visible",
+            "line": 7,
+            "output": [
+              "Second item price is valid"
+            ],
+            "match": {
+              "location": "features/step_definitions/signup_steps.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 80179000
             },
             "after": [
               {
@@ -127,43 +153,17 @@
           },
           {
             "keyword": "And ",
-            "name": "I verify if second item is visible",
-            "line": 7,
-            "output": [
-              "Test passed"
-            ],
-            "match": {
-              "location": "features/step_definitions/signup_steps.rb:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 56905000
-            },
-            "after": [
-              {
-                "match": {
-                  "location": "features/support/env.rb:47"
-                },
-                "result": {
-                  "status": "passed",
-                  "duration": 18000
-                }
-              }
-            ]
-          },
-          {
-            "keyword": "And ",
             "name": "I verify if third item is visible",
             "line": 8,
             "output": [
-              "Test passed"
+              "Third item price is valid"
             ],
             "match": {
               "location": "features/step_definitions/signup_steps.rb:33"
             },
             "result": {
               "status": "passed",
-              "duration": 66645000
+              "duration": 72387000
             },
             "after": [
               {
@@ -181,13 +181,15 @@
             "keyword": "And ",
             "name": "I verify if fourth item is visible",
             "line": 9,
+            "output": [
+              "Fourth item price is valid"
+            ],
             "match": {
               "location": "features/step_definitions/signup_steps.rb:45"
             },
             "result": {
-              "status": "failed",
-              "error_message": "Unable to find xpath \"//a[contains(., \\\"JBL GO 2 Bluetooth Speaker Midnight Black\\\")]/ancestor::div[@class=\\\"p-content\\\"]/following-sibling::div[@class=\\\"info-holder\\\"]/child::div[@class=\\\"p-info\\\"]//child::div[@data-sell-price-w-vat=\\\"31.00\\\"]\" (Capybara::ElementNotFound)\n./features/step_definitions/signup_steps.rb:49:in `/^I verify if fourth item is visible/'\nfeatures/demo.1.feature:9:in `And I verify if fourth item is visible'",
-              "duration": 30083673000
+              "status": "passed",
+              "duration": 64119000
             },
             "after": [
               {
@@ -195,7 +197,8 @@
                   "location": "features/support/env.rb:47"
                 },
                 "result": {
-                  "status": "skipped"
+                  "status": "passed",
+                  "duration": 19000
                 }
               }
             ]
@@ -207,9 +210,8 @@
               "location": "features/support/env.rb:37"
             },
             "result": {
-              "status": "failed",
-              "error_message": "No such file or directory @ rb_sysopen - report/{file_name} (Errno::ENOENT)\n./features/support/env.rb:54:in `add_screenshot'\n./features/support/env.rb:38:in `After'",
-              "duration": 552892000
+              "status": "passed",
+              "duration": 6087000
             }
           },
           {
@@ -218,7 +220,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 63000
+              "duration": 299000
             }
           },
           {
@@ -227,7 +229,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 235633000
+              "duration": 119548000
             }
           }
         ]

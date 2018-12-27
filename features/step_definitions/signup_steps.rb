@@ -12,7 +12,7 @@ And(/^I verify if first item is visible/) do
     raise "first item is not visible"
   end
 if find(:xpath, '//a[contains(., "JBL Tune 500BT Bluetooth On-Ear Headphones Black")]/ancestor::div[@class="p-content"]/following-sibling::div[@class="info-holder"]/child::div[@class="p-info"]//child::div[@data-sell-price-w-vat="41.99"]').visible?
-    puts 'Test passed'
+    puts 'First item price is valid'
   else
     puts 'Price for first item was not equal'
   end
@@ -24,7 +24,7 @@ unless find(:css, "img[alt='JBL T450BT Bluetooth On-Ear Headphones White']").vis
   end
 
   if find(:xpath, '//a[contains(., "JBL T450BT Bluetooth On-Ear Headphones White")]/ancestor::div[@class="p-content"]/following-sibling::div[@class="info-holder"]/child::div[@class="p-info"]//child::div[@data-sell-price-w-vat="66.56"]').visible?
-    puts 'Test passed'
+    puts 'Second item price is valid'
   else
     puts 'Price for second item was not equal'
   end
@@ -35,7 +35,7 @@ And(/^I verify if third item is visible/) do
     raise "third item is not visible"
   end
   if find(:xpath, '//a[contains(., "JBL GO 2 Bluetooth Speaker Midnight Black")]/ancestor::div[@class="p-content"]/following-sibling::div[@class="info-holder"]/child::div[@class="p-info"]//child::div[@data-sell-price-w-vat="29.99"]').visible?
-    puts 'Test passed'
+    puts 'Third item price is valid'
   else
     puts 'Price for third item was not equal'
   end
@@ -43,11 +43,11 @@ end
 
 
 And(/^I verify if fourth item is visible/) do
-  unless find(:css, "img[alt='JBL GO 2 Bluetooth Speaker Midnight Black']").visible?
+  unless find(:css, "img[alt='JBL GO 2 Bluetooth Speaker Pearl Champange']").visible?
     raise "fourth item is not visible"
   end
-  if find(:xpath, '//a[contains(., "JBL GO 2 Bluetooth Speaker Midnight Black")]/ancestor::div[@class="p-content"]/following-sibling::div[@class="info-holder"]/child::div[@class="p-info"]//child::div[@data-sell-price-w-vat="31.00"]').visible?
-    puts 'Test passed'
+  if find(:xpath, '//a[contains(., "JBL GO 2 Bluetooth Speaker Pearl Champange")]/ancestor::div[@class="p-content"]/following-sibling::div[@class="info-holder"]/child::div[@class="p-info"]//child::div[@data-sell-price-w-vat="31.00"]').visible?
+    puts 'Fourth item price is valid'
   else
     puts 'Price for fourth item was not equal'
   end
