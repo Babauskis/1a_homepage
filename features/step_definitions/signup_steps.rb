@@ -46,7 +46,7 @@ And(/^I verify if fourth item is visible/) do
   unless find(:css, "img[alt='JBL GO 2 Bluetooth Speaker Pearl Champange']").visible?
     raise "fourth item is not visible"
   end
-  if find(:xpath, '//a[contains(., "JBL GO 2 Bluetooth Speaker Pearl Champange")]/ancestor::div[@class="p-content"]/following-sibling::div[@class="info-holder"]/child::div[@class="p-info"]//child::div[@data-sell-price-w-vat="31.00"]').visible?
+  if find(:xpath, '//a[contains(., "JBL GO 2 Bluetooth Speaker Pearl Champange")]/ancestor::div[@class="p-content"]/following-sibling::div[@class="info-holder"]/child::div[@class="p-info"]//child::div[@data-sell-price-w-vat="30.01"]').visible?
     puts 'Fourth item price is valid'
   else
     puts 'Price for fourth item was not equal'
