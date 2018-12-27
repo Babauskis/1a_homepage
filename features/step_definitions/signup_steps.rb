@@ -62,3 +62,4 @@ And(/^I verify if fourth item is visible/) do
       puts 'Price for fifth item was not equal'
     end
 end
+end

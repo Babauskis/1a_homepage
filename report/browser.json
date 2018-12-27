@@ -1,6 +1,6 @@
 [
   {
-    "uri": "features/demo.feature",
+    "uri": "features/demo.1.feature",
     "id": "demo-feature",
     "keyword": "Feature",
     "name": "Demo Feature",
@@ -21,7 +21,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 38000
+              "duration": 34000
             }
           },
           {
@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11000
+              "duration": 12000
             }
           },
           {
@@ -48,7 +48,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3972947000
+              "duration": 4197083000
             }
           }
         ],
@@ -62,7 +62,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11056940000
+              "duration": 5385130000
             },
             "after": [
               {
@@ -71,7 +71,7 @@
                 },
                 "result": {
                   "status": "passed",
-                  "duration": 211000
+                  "duration": 25000
                 }
               }
             ]
@@ -85,7 +85,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7979149000
+              "duration": 7991261000
             },
             "after": [
               {
@@ -94,7 +94,7 @@
                 },
                 "result": {
                   "status": "passed",
-                  "duration": 23000
+                  "duration": 21000
                 }
               }
             ]
@@ -111,7 +111,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 58847000
+              "duration": 60951000
             },
             "after": [
               {
@@ -120,7 +120,7 @@
                 },
                 "result": {
                   "status": "passed",
-                  "duration": 14000
+                  "duration": 16000
                 }
               }
             ]
@@ -137,7 +137,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 104793000
+              "duration": 206950000
             },
             "after": [
               {
@@ -146,7 +146,7 @@
                 },
                 "result": {
                   "status": "passed",
-                  "duration": 15000
+                  "duration": 29000
                 }
               }
             ]
@@ -163,7 +163,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 55018000
+              "duration": 89143000
             },
             "after": [
               {
@@ -172,7 +172,7 @@
                 },
                 "result": {
                   "status": "passed",
-                  "duration": 15000
+                  "duration": 20000
                 }
               }
             ]
@@ -188,8 +188,9 @@
               "location": "features/step_definitions/signup_steps.rb:45"
             },
             "result": {
-              "status": "passed",
-              "duration": 50681000
+              "status": "failed",
+              "error_message": "undefined method `And' for #<Object:0x00007f9d49ae4708>\nDid you mean?  rand (NoMethodError)\n./features/step_definitions/signup_steps.rb:55:in `/^I verify if fourth item is visible/'\nfeatures/demo.1.feature:9:in `And I verify if fourth item is visible'",
+              "duration": 60683000
             },
             "after": [
               {
@@ -197,8 +198,28 @@
                   "location": "features/support/env.rb:47"
                 },
                 "result": {
-                  "status": "passed",
-                  "duration": 21000
+                  "status": "skipped"
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "name": "I verify if fifth item is visible",
+            "line": 10,
+            "match": {
+              "location": "features/demo.1.feature:10"
+            },
+            "result": {
+              "status": "undefined"
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:47"
+                },
+                "result": {
+                  "status": "skipped"
                 }
               }
             ]
@@ -210,8 +231,9 @@
               "location": "features/support/env.rb:37"
             },
             "result": {
-              "status": "passed",
-              "duration": 4972000
+              "status": "failed",
+              "error_message": "No such file or directory @ rb_sysopen - report/{file_name} (Errno::ENOENT)\n./features/support/env.rb:54:in `add_screenshot'\n./features/support/env.rb:38:in `After'",
+              "duration": 590590000
             }
           },
           {
@@ -220,7 +242,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 67000
+              "duration": 24000
             }
           },
           {
@@ -229,7 +251,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 149582000
+              "duration": 84197000
             }
           }
         ]

@@ -1,6 +1,6 @@
 [
   {
-    "uri": "features/demo.1.feature",
+    "uri": "features/demo.feature",
     "id": "demo-feature",
     "keyword": "Feature",
     "name": "Demo Feature",
@@ -21,7 +21,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39000
+              "duration": 27000
             }
           },
           {
@@ -30,7 +30,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19000
+              "duration": 11000
             }
           },
           {
@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13000
+              "duration": 9000
             }
           },
           {
@@ -48,7 +48,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4505033000
+              "duration": 3765571000
             }
           }
         ],
@@ -62,7 +62,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14946554000
+              "duration": 5028610000
             },
             "after": [
               {
@@ -71,7 +71,7 @@
                 },
                 "result": {
                   "status": "passed",
-                  "duration": 85000
+                  "duration": 43000
                 }
               }
             ]
@@ -85,7 +85,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7927155000
+              "duration": 7835840000
             },
             "after": [
               {
@@ -94,7 +94,7 @@
                 },
                 "result": {
                   "status": "passed",
-                  "duration": 36000
+                  "duration": 24000
                 }
               }
             ]
@@ -111,7 +111,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 168803000
+              "duration": 70119000
             },
             "after": [
               {
@@ -120,7 +120,7 @@
                 },
                 "result": {
                   "status": "passed",
-                  "duration": 24000
+                  "duration": 25000
                 }
               }
             ]
@@ -137,7 +137,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 80179000
+              "duration": 206391000
             },
             "after": [
               {
@@ -146,7 +146,7 @@
                 },
                 "result": {
                   "status": "passed",
-                  "duration": 21000
+                  "duration": 23000
                 }
               }
             ]
@@ -163,7 +163,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 72387000
+              "duration": 54566000
             },
             "after": [
               {
@@ -172,7 +172,7 @@
                 },
                 "result": {
                   "status": "passed",
-                  "duration": 23000
+                  "duration": 15000
                 }
               }
             ]
@@ -188,8 +188,9 @@
               "location": "features/step_definitions/signup_steps.rb:45"
             },
             "result": {
-              "status": "passed",
-              "duration": 64119000
+              "status": "failed",
+              "error_message": "undefined method `And' for #<Object:0x00007fb9d7bb2770>\nDid you mean?  rand (NoMethodError)\n./features/step_definitions/signup_steps.rb:55:in `/^I verify if fourth item is visible/'\nfeatures/demo.feature:9:in `And I verify if fourth item is visible'",
+              "duration": 63261000
             },
             "after": [
               {
@@ -197,8 +198,7 @@
                   "location": "features/support/env.rb:47"
                 },
                 "result": {
-                  "status": "passed",
-                  "duration": 19000
+                  "status": "skipped"
                 }
               }
             ]
@@ -210,8 +210,9 @@
               "location": "features/support/env.rb:37"
             },
             "result": {
-              "status": "passed",
-              "duration": 6087000
+              "status": "failed",
+              "error_message": "No such file or directory @ rb_sysopen - report/{file_name} (Errno::ENOENT)\n./features/support/env.rb:54:in `add_screenshot'\n./features/support/env.rb:38:in `After'",
+              "duration": 637423000
             }
           },
           {
@@ -220,7 +221,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 299000
+              "duration": 24000
             }
           },
           {
@@ -229,7 +230,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 119548000
+              "duration": 78070000
             }
           }
         ]
