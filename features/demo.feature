@@ -7,4 +7,3 @@ Feature: Demo Feature
         And I verify if second item is visible
         And I verify if third item is visible
         And I verify if fourth item is visible
-        And I verify if fifth item is visible
