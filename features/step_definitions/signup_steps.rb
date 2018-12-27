@@ -8,26 +8,26 @@ And(/^I search for an item/) do
 end
 
 And(/^I verify if first item is visible/) do
-  unless find(:css, "#product_search_result_grid_container > div.product-grid.search-products > section:nth-child(1) > div > div > div > div.p-image > a:nth-child(2) > img").visible?
+  unless find(:css, "img[alt='JBL Tune 500BT Bluetooth On-Ear Headphones Black']").visible?
     raise "first item is not visible"
   end
 end
 
 And(/^I verify if second item is visible/) do
-unless find(:css, "#product_search_result_grid_container > div.product-grid.search-products > section:nth-child(2) > div > div > div > div.p-image > a:nth-child(2) > img").visible?
+unless find(:css, "img[alt='JBL T450BT Bluetooth On-Ear Headphones White']").visible?
   raise "second item is not visible"
   end
 end
 
 And(/^I verify if third item is visible/) do
-  unless find(:css, "#product_search_result_grid_container > div.product-grid.search-products > section:nth-child(3) > div > div > div > div.p-image > a:nth-child(2) > img").visible?
+  unless find(:css, "img[alt='JBL GO 2 Bluetooth Speaker Midnight Black']").visible?
     raise "third item is not visible"
   end
 end
 
 
 And(/^I verify if fourth item is visible/) do
-  unless find(:css, "#product_search_result_grid_container > div.product-grid.search-products > section:nth-child(4) > div > div > div > div.p-image > a:nth-child(2) > img").visible?
+  unless find(:css, "img[alt='JBL GO 2 Bluetooth Speaker Midnight Black']").visible?
     raise "fourth item is not visible"
   end
 end
