@@ -9,7 +9,7 @@ class Optparse
 
     def self.parse(args)
         options = OpenStruct.new
-        options.format = 'json'
+        options.format = 'html'
         options.path = 'report/'
         options.host = "https://www.1a.lv"
         options.threads = '2'
