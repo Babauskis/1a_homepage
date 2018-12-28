@@ -1,6 +1,6 @@
 [
   {
-    "uri": "features/demo.feature",
+    "uri": "features/demo.1.feature",
     "id": "demo-feature",
     "keyword": "Feature",
     "name": "Demo Feature",
@@ -21,7 +21,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 27000
+              "duration": 34000
             }
           },
           {
@@ -30,7 +30,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11000
+              "duration": 17000
             }
           },
           {
@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9000
+              "duration": 13000
             }
           },
           {
@@ -48,7 +48,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3765571000
+              "duration": 3648683000
             }
           }
         ],
@@ -62,7 +62,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5028610000
+              "duration": 5220305000
             },
             "after": [
               {
@@ -71,7 +71,7 @@
                 },
                 "result": {
                   "status": "passed",
-                  "duration": 43000
+                  "duration": 37000
                 }
               }
             ]
@@ -85,7 +85,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7835840000
+              "duration": 2930209000
             },
             "after": [
               {
@@ -94,7 +94,7 @@
                 },
                 "result": {
                   "status": "passed",
-                  "duration": 24000
+                  "duration": 21000
                 }
               }
             ]
@@ -103,15 +103,12 @@
             "keyword": "And ",
             "name": "I verify if first item is visible",
             "line": 6,
-            "output": [
-              "First item price is valid"
-            ],
             "match": {
               "location": "features/step_definitions/signup_steps.rb:10"
             },
             "result": {
               "status": "passed",
-              "duration": 70119000
+              "duration": 39768000
             },
             "after": [
               {
@@ -120,7 +117,7 @@
                 },
                 "result": {
                   "status": "passed",
-                  "duration": 25000
+                  "duration": 16000
                 }
               }
             ]
@@ -133,11 +130,11 @@
               "Second item price is valid"
             ],
             "match": {
-              "location": "features/step_definitions/signup_steps.rb:21"
+              "location": "features/step_definitions/signup_steps.rb:14"
             },
             "result": {
               "status": "passed",
-              "duration": 206391000
+              "duration": 104606000
             },
             "after": [
               {
@@ -146,7 +143,7 @@
                 },
                 "result": {
                   "status": "passed",
-                  "duration": 23000
+                  "duration": 21000
                 }
               }
             ]
@@ -159,11 +156,11 @@
               "Third item price is valid"
             ],
             "match": {
-              "location": "features/step_definitions/signup_steps.rb:33"
+              "location": "features/step_definitions/signup_steps.rb:26"
             },
             "result": {
               "status": "passed",
-              "duration": 54566000
+              "duration": 67027000
             },
             "after": [
               {
@@ -172,7 +169,7 @@
                 },
                 "result": {
                   "status": "passed",
-                  "duration": 15000
+                  "duration": 21000
                 }
               }
             ]
@@ -185,12 +182,11 @@
               "Fourth item price is valid"
             ],
             "match": {
-              "location": "features/step_definitions/signup_steps.rb:45"
+              "location": "features/step_definitions/signup_steps.rb:37"
             },
             "result": {
-              "status": "failed",
-              "error_message": "undefined method `And' for #<Object:0x00007fb9d7bb2770>\nDid you mean?  rand (NoMethodError)\n./features/step_definitions/signup_steps.rb:55:in `/^I verify if fourth item is visible/'\nfeatures/demo.feature:9:in `And I verify if fourth item is visible'",
-              "duration": 63261000
+              "status": "passed",
+              "duration": 76429000
             },
             "after": [
               {
@@ -198,7 +194,8 @@
                   "location": "features/support/env.rb:47"
                 },
                 "result": {
-                  "status": "skipped"
+                  "status": "passed",
+                  "duration": 28000
                 }
               }
             ]
@@ -210,9 +207,8 @@
               "location": "features/support/env.rb:37"
             },
             "result": {
-              "status": "failed",
-              "error_message": "No such file or directory @ rb_sysopen - report/{file_name} (Errno::ENOENT)\n./features/support/env.rb:54:in `add_screenshot'\n./features/support/env.rb:38:in `After'",
-              "duration": 637423000
+              "status": "passed",
+              "duration": 4350000
             }
           },
           {
@@ -221,7 +217,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 24000
+              "duration": 28000
             }
           },
           {
@@ -230,7 +226,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 78070000
+              "duration": 159121000
             }
           }
         ]
