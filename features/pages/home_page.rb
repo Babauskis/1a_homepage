@@ -12,7 +12,7 @@ class HomePage < BasePage
     @price_for_first_item = Element.new(:xpath, '//a[contains(., "JBL Tune 500BT Bluetooth On-Ear Headphones Black")]/ancestor::div[@class="p-content"]/following-sibling::div[@class="info-holder"]/child::div[@class="p-info"]//child::div[@data-sell-price-w-vat="41.99"]')
     @price_for_second_item = Element.new(:xpath, '//a[contains(., "JBL T450BT Bluetooth On-Ear Headphones White")]/ancestor::div[@class="p-content"]/following-sibling::div[@class="info-holder"]/child::div[@class="p-info"]//child::div[@data-sell-price-w-vat="66.56"]')
     @price_for_third_item = Element.new(:xpath, '//a[contains(., "JBL GO 2 Bluetooth Speaker Midnight Black")]/ancestor::div[@class="p-content"]/following-sibling::div[@class="info-holder"]/child::div[@class="p-info"]//child::div[@data-sell-price-w-vat="28.99"]')
-    @price_for_fourth_item = Element.new(:xpath, '//a[contaissadasadasns(., "JBL GO 2 Bluetooth Speaker Pearl Champange")]/ancestor::div[@class="p-content"]/following-sibling::div[@class="info-holder"]/child::div[@class="p-info"]//child::div[@data-sell-price-w-vat="30.00"]')
+    @price_for_fourth_item = Element.new(:xpath, '//a[contains(., "JBL GO 2 Bluetooth Speaker Pearl Champange")]/ancestor::div[@class="p-content"]/following-sibling::div[@class="info-holder"]/child::div[@class="p-info"]//child::div[@data-sell-price-w-vat="30.00"]')
     @add_first_item_cart = Element.new(:css, "a[pro_id='474483']")
   end
 
@@ -44,34 +44,34 @@ class HomePage < BasePage
     if @price_for_first_item.visible?
       puts 'First item price is valid'
     else
-      puts 'Price for first item was not equal'
+      puts 'Second item price is valid'
     end
   end
 
   def secondItemVisible
     @name_for_first_item.visible?
     if @price_for_first_item.visible?
-      puts 'First item price is valid'
+      puts 'Second item price is valid'
     else
-      puts 'Price for first item was not equal'
+      puts 'Price for third item was not equal'
     end
   end
 
   def thirdItemVisible
     @name_for_first_item.visible?
     if @price_for_first_item.visible?
-      puts 'First item price is valid'
+      puts 'Third item price is valid'
     else
-      puts 'Price for first item was not equal'
+      puts 'Price for third item was not equal'
     end
   end
 
   def fourthItemVisible
     @name_for_first_item.visible?
     if @price_for_first_item.visible?
-      puts 'First item price is valid'
+      puts 'Fourth item price is valid'
     else
-      puts 'Price for first item was not equal'
+      puts 'Price for fourth item was not equal'
     end
   end
 
