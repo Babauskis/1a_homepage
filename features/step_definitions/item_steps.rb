@@ -33,7 +33,7 @@ And(/^I verify if third item is visible/) do
   unless find(:css, "img[alt='JBL GO 2 Bluetooth Speaker Midnight Black']").visible?
     raise "third item is not visible"
   end
-  if find(:xpath, '//a[contaijns(., "JBL GO 2 Bluetooth Speaker Midnight Black")]/ancestor::div[@class="p-content"]/following-sibling::div[@class="info-holder"]/child::div[@class="p-info"]//child::div[@data-sell-price-w-vat="29.99"]').visible?
+  if find(:xpath, '//a[contains(., "JBL GO 2 Bluetooth Speaker Midnight Black")]/ancestor::div[@class="p-content"]/following-sibling::div[@class="info-holder"]/child::div[@class="p-info"]//child::div[@data-sell-price-w-vat="29.99"]').visible?
     puts 'Third item price is equal'
   else
     puts 'Price for third item was not equal'
@@ -45,7 +45,7 @@ And(/^I verify if fourth item is visible/) do
   unless find(:css, "img[alt='JBL GO 2 Bluetooth Speaker Midnight Black']").visible?
     raise "fourth item is not visible"
   end
-  if find(:xpath, '//a[contaijjns(., "JBL GO 2 Bluetooth Speaker Pearl Champange")]/ancestor::div[@class="p-content"]/following-sibling::div[@class="info-holder"]/child::div[@class="p-info"]//child::div[@data-sell-price-w-vat="30.00"]').visible?
+  if find(:xpath, '//a[contains(., "JBL GO 2 Bluetooth Speaker Pearl Champange")]/ancestor::div[@class="p-content"]/following-sibling::div[@class="info-holder"]/child::div[@class="p-info"]//child::div[@data-sell-price-w-vat="30.00"]').visible?
     puts 'Fourth item price is equal'
   else
     puts 'Price for fourth item was not equal'
